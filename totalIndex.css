@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root{
+
+	--primary-color: #2063B8;
+	--secondary-color: #636e72;
+	--tertiary-color:  #000000;
+	--quaternary-color: #99ef99;
+	/* --quinary-color: #7eff56; */
+	--font: 'Poppins', sans-serif;
+}
+*{
+	/* Todo css */
+	font-family: var(--font);
+	padding: 0%;
+	margin: 0%;
+}
+
+nav{
+	position: fixed;
+	top: 0%;
+	width: 100%;
+	height: 10%;
+	border-top: .5rem solid var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999999;
+	background-color: var(--tertiary-color);
+	font-family: var(--font);
+}
+.logo{
+	display: flex;
+	top: 0%;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--font);
+	background: var(--primary-color);
+	text-transform: uppercase;
+	width: auto;
+	margin: 1%;
+	padding: 2%;
+}
+.logo img {
+	right: auto;
+    height: 10%;
+	width: 50px;
+}
+.barra{
+	display: flex;
+	align-items: center;
+	height: 60px;
+	text-decoration: none;
+	color: white;
+	margin: 0 2rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: 700;
+	font-size: 16px;
+	list-style: none;
+}
+
+.barra:hover{
+	color: var(--primary-color);
+}
+.btn{
+	padding: 15px;
+	text-transform: uppercase;
+	font-family: var(--font);
+	background: var(--primary-color);
+	color: white;
+	font-size: 90%;
+	text-decoration: none;
+	list-style: none;
+	outline: none;
+	border: 4% solid var(--primary-color);
+	transition: .3s;
+	cursor: pointer;
+	justify-content: space-between;
+}
+
+.btn:hover{
+	color: var(--tertiary-color);
+}
+
+
+/* slider LandinPage */
+.slider-frame {
+	width: auto;
+    height: auto;
+	margin:50px auto 0%;
+	overflow: hidden;
+	background: black;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0%;
+	width: 500%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 90%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	35% {margin-left: -100%;}
+	
+	45% {margin-left: -200%;}
+	55% {margin-left: -200%;}
+
+	60% {margin-left: -300%;}
+	70% {margin-left: -300%;}
+	
+	80% {margin-left: -400%;}
+	100% {margin-left: -400%;
+		
+	}
+}
+
+
+/* Estilos planes */
+.banner{
+	background: url(wed/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 85vh;
+}
+.intro{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	color: white;
+
+}
+
+.intro h2,p{
+	display: block;
+	width: 60%;
+}
+
+.intro h2{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 30px;
+}
+.intro .btn{
+	margin-top: 2rem;
+}
+.row{
+	display: flex;
+	justify-content: center;
+}
+.card{
+	
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.card h2{
+	text-transform: uppercase;
+}
+
+/* Pie de Pagina AAAA*/
+footer{
+	height: auto;
+	display: flex;
+	width: 100%;
+	color: whitesmoke;
+	text-decoration: none;
+	list-style: none;
+.footer{
+	padding-top: 1%;
+	width: 25%;
+	padding-bottom: 2%;
+	padding-left: 4%;
+	background: rgb(45, 45, 50);
+	text-align: left;
+}
+}
+
+.copyrigh{
+	text-align: center;
+	color: black; 
+	background-color: rgb(0, 123, 255);
+	width: 100%;
+}
